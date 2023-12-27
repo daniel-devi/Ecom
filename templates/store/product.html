@@ -1,0 +1,13 @@
+{% extends "main.html" %} 
+{% load static %}
+{% block content %}
+
+  <h2>Name: {{ product.name }}</h2>
+  <img class="thumbnail" src="{{product.imageURL}}">
+  <br>
+  <hr>
+  <h4>Product Description: {{ product.description }}</h4>
+  <br>
+  <h4>Product Info: {{ product.info }}</h4>
+
+{% endblock content %}
